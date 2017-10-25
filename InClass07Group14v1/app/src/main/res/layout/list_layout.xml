@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageViewSmall"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/textViewSwitchName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/imageViewSmall"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textViewPriceTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewSwitchName"
+        android:layout_below="@+id/textViewSwitchName"
+        android:text="Price:" />
+
+    <TextView
+        android:id="@+id/textViewPricevalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewPriceTitle"
+        android:layout_alignBottom="@+id/textViewPriceTitle"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/textViewPriceTitle"
+        android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewPriceTitle"
+        android:layout_below="@+id/textViewPriceTitle"
+        app:srcCompat="@drawable/price_low" />
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.arun.inclass07group14v1.MainActivity">
+
+
+    <ImageButton
+        android:id="@+id/imageButtonRefresh"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="18dp"
+
+        android:background="@drawable/refresh_icon" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/imageButtonRefresh"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textViewSwitchName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="45dp"
+        android:layout_marginTop="13dp"
+        android:text="Ascending" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageButtonRefresh"
+        android:layout_below="@+id/listView"
+        android:layout_marginTop="14dp"
+        android:text="Filtered Apps" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_below="@+id/textView2"
+        android:layout_toEndOf="@+id/imageButtonRefresh"
+        android:orientation="horizontal">
+
+
+        <!-- A RecyclerView with some commonly used attributes -->
+
+    </LinearLayout>
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/textViewSwitchName"
+        android:checked="true" />
+
+    <TextView
+        android:id="@+id/textViewNoFilteredApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="375dp"
+        android:text="@string/no_filtered_app"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_recycler_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:scrollbars="vertical" />
+
+
+</RelativeLayout>
